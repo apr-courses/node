@@ -15,7 +15,8 @@ We need detect only active users and create a `json file` with a new structure f
     "company": "Apriorit",
     "email": "mymail@site.com",
     "age": "29",
-  }
+  },
+  ...
 ]
 ```
 
