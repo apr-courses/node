@@ -9,10 +9,10 @@ We need to write the 2 scripts. First - add users to the blacklist. Second - che
 First script
 1. Create a blacklist.json file in your project. [{"ip": "192.168.1.1", "country": "Ukraine"}]
 2. You have to check if your IP from Ukraine. If yes - add this IP to the blacklist and print it to console.
-4. To get info about the user IP and Country use open source API - [https://ip-api.com/docs/api:json](https://ip-api.com/docs/api:json)
+4. To get info about the user IP and Country use open source API - [https://ip-api.com/docs](https://ip-api.com/docs)
 
 Second script
-1. Receive the user IP by using [https://ip-api.com/docs/api:json](https://ip-api.com/docs/api:json)
+1. Receive the user IP by using [https://ip-api.com/docs](https://ip-api.com/docs)
 2. Compare the IP with the IPs in blacklist.
 3. Print "you are blocked" or "you pass control"
 
