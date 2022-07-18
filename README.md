@@ -1,20 +1,26 @@
-# Cycles
+# Async/await
 
 ## Homework
 
 ### The task description
 
-The total platform price depends on count of users they have.
-One user costs 10$. The total count of users is 2000;
+We need to write the 2 scripts. First - add users to the blacklist. Second - check if the user is already on the blacklist.
 
-The userID is the same as serial number in the list. (from 0 to 2000);
+First script
+1. Create a blacklist.json file in your project. [{"ip": "192.168.1.1", "country": "Ukraine"}]
+2. You have to check if your IP from Ukraine. If yes - add this IP to the blacklist and print it to console.
+4. To get info about the user IP and Country use open source API - [https://ip-api.com/docs/api:json](https://ip-api.com/docs/api:json)
 
-The ID's 0, 1, 10, 11, 22 - administrators, we don't need to calculate them.
-The ID's 101, 202, 203 - use project as trial - they cost 5$.
+Second script
+1. Receive the user IP by using [https://ip-api.com/docs/api:json](https://ip-api.com/docs/api:json)
+2. Compare the IP with the IPs in blacklist.
+3. Print "you are blocked" or "you pass control"
 
-Provide the code, that calculate the total platform cost by using:
-1) for cycle
-2) while cycle
-3) avoid using cycles
+The result should be:
+1. After running the first script - your IP should be in console and added to blacklist.json
+2. After running the second script - you should print message - you are blocked (if IP already in blacklist)
 
-Additional option: set administrators ids and total count of users as environment variables.
+Important points!
+The IP should not duplicate in blacklist.
+
+Additional option: set administrator's ids and total count of users as environment variables.
