@@ -1,20 +1,27 @@
-# Cycles
+# Arrays
 
 ## Homework
 
 ### The task description
 
-The total platform price depends on count of users they have.
-One user costs 10$. The total count of users is 2000;
+The third-party service sends to us the list of new emplyers. You can find them in users.json file in this repo.
 
-The userID is the same as serial number in the list. (from 0 to 2000);
+We need detect only active users and create a `json file` with a new structure for them.
+[
+  {
+    "id": "userId",
+    "name": "fullname",
+    "company": "Apriorit",
+    "email": "mymail@site.com",
+    "age": "29",
+  }
+]
 
-The ID's 0, 1, 10, 11, 22 - administrators, we don't need to calculate them.
-The ID's 101, 202, 203 - use project as trial - they cost 5$.
+1. Find all active users in json structure.
+2. For the active users change the company name to `Apriorit`.
+3. For the new Atriorit users, find the users with the age less than 25 years old and add extra parameter to it's data {"isStudent:": "true" }.
+4. Print the user emails to console that have `isStudent` parameter.
+5. Creta a apriorit-users.json file in terminal. Add all apriorit users to this file.
 
-Provide the code, that calculate the total platform cost by using:
-1) for cycle
-2) while cycle
-3) avoid using cycles
+The script should generate apriorit-users.json file automatically.
 
-Additional option: set administrators ids and total count of users as environment variables.
