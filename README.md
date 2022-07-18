@@ -7,6 +7,7 @@
 The third-party service sends to us the list of new emplyers. You can find them in users.json file in this repo.
 
 We need detect only active users and create a `json file` with a new structure for them.
+```json
 [
   {
     "id": "userId",
@@ -16,6 +17,7 @@ We need detect only active users and create a `json file` with a new structure f
     "age": "29",
   }
 ]
+```
 
 1. Find all active users in json structure.
 2. For the active users change the company name to `Apriorit`.
