@@ -1,20 +1,21 @@
-# Cycles
+# Express
 
 ## Homework
 
 ### The task description
 
-The total platform price depends on count of users they have.
-One user costs 10$. The total count of users is 2000;
+Create a rest API to manage all the users in the app. Use nodejs `express` library for this. 
 
-The userID is the same as serial number in the list. (from 0 to 2000);
+Add API routes to
+ - get all users
+ - get one user by id
+ - update one user
+ - update all users
+ - delete one user
+ 
+The initial user data take from `users.json` file
+After any changes - update this file.
 
-The ID's 0, 1, 10, 11, 22 - administrators, we don't need to calculate them.
-The ID's 101, 202, 203 - use project as trial - they cost 5$.
-
-Provide the code, that calculate the total platform cost by using:
-1) for cycle
-2) while cycle
-3) avoid using cycles
-
-Additional option: set administrators ids and total count of users as environment variables.
+Extra tasks:
+ - Block delete and update routes and allow only administrator to do it.
+ - Provide the API docs in Swagger or as Postman collection.
